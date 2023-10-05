@@ -33,6 +33,8 @@ SRC = ./src/main.c \
 
 LIBDIR = ./libft/
 
+MLXDIR = ./minilibx-linux/
+
 CC = gcc -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
@@ -40,6 +42,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
+	@cd $(MLXDIR) && $(MAKE)
 	cd $(LIBDIR) && $(MAKE)
 	$(CC) $(OBJ) ./libft/libft.a ./minilibx-linux/libmlx_Linux.a -lXext -lX11 -lz -o $(NAME) -lm
 

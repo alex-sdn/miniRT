@@ -7,3 +7,7 @@ Compile with `make` and execute by passing a scene as argument (demo scenes can 
 
 
 ![Demo sphere](/img/sphere.gif)
+<sup>Sphere with moving light source</sup>
+
+![arbre lol](/img/arbre.png)
+<sup>:)</sup>
